@@ -11,12 +11,21 @@ NUTCRACKER="$BINPATH/nutcracker.exe"
 
 
 function HELP {
-    echo -e "  bbmod.sh - Linux version of mass compile and decompile scripts \\n"
-    echo -e "  Usage: $0"
+    echo -e "bbmod.sh - Linux version of mass compile and decompile scripts"
+    echo -e "Usage: $0 [OPTION]... [INPUT]..."
+    echo -e " Compile or decompile one or more nut/cnut files."
+    echo -e " If one of the inputs is a folder, compiles or decompiles all"
+    echo -e " nut/cnut files in the folder. Files and folders on input can be freely"
+    echo -e " combined."
     echo -e "  -c   compile one or more files or folders"
     echo -e "  -d   decompile one or more files or folders"
     echo -e "  -r   remove old files after compilation/decompilation to save space"
     echo -e "  -h   prints this message and exists"\\n
+    echo -e "Examples:"
+    echo -e "bbmod.sh -c f.nut mod         Compiles f.nut and all nut files in the mod"
+    echo -e "                              directory."
+    echo -e "bbmod.sh -dr f1.cnut f2.cnut  Decompiles f1.cnut and f2.cnut into f1.nut and"
+    echo -e "                              f2.nut. Original files are removed."
     }
 
 function decrypt_and_decompile {
