@@ -17,3 +17,10 @@ Now you can run `bbmod.sh` to convert encrypted `.cnut` files to `.nut` files an
 
 ## Dependencies
 `bbmod.sh` calls two binaries from the mod pack: `bbsq.exe` and `nutcracker.exe` and thus depends on them. They are windows programs so `wine` is required to execute them.
+
+## Useful links
+
+* [Adam Milazzo's modkit](http://www.adammil.net/blog/v133_Battle_Brothers_mod_kit.html#modkit) -- required for `bbmod.sh`, required to decrypt and decompile `.cnut` files
+* [Squirrel language reference](https://developer.electricimp.com/squirrel) -- learn the Squirrel programming language
+* [Script hooks](https://www.nexusmods.com/battlebrothers/mods/42) and [their documentation](https://docs.google.com/document/d/17oTdGmKLOvYrq6abFheuQqhPYnbtXqUgTWxjJTXAceY/edit) to make mods more portable by not overwritting the original functions, but *hooking* on them instead.
+* [Basic modding tutorial on adding items](https://battlebrothers.fandom.com/wiki/Mods_and_Modding)
